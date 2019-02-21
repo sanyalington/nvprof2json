@@ -207,7 +207,7 @@ def main():
 def munge_time(t):
     """Take a time from nvprof and convert it into a chrome://tracing time."""
     # For strict correctness, divide by 1000, but this reduces accuracy.
-    return t # / 1000.
+    return t*0.001
 
 def demangle(name):
     """Demangle a C++ identifier using c++filt"""
